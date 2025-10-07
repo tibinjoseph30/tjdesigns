@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --global-font: "Inter", sans-serif;
+  --global-font-size: 16px;
+  --primary-color: #FFDD57;
+  --accent-color: #1A2E40;
+}
+
+body {
+  font-family: var(--global-font);
+  font-size: var(--global-font-size);
+  background-color: var(--accent-color);
+}
