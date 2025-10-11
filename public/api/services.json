@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "title": "Web Design",
+      "description": "Clean, fast, and SEO-ready websites tailored to your business.",
+      "keywords": ["responsive", "mobile first"]
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Design",
+      "description": "User-friendly interfaces crafted for seamless digital experiences.",
+      "keywords": ["Wireframes", "Mockups"]
+    },
+    {
+      "id": 3,
+      "title": "Branding",
+      "description": "Unique brand identities that build trust and recognition.",
+      "keywords": ["Logo", "Business Cards", "Social Media Posts"]
+    }
+]

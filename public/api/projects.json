@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "title": "Elegant Interiors",
+      "thumbnail": "/assets/projects/ELEGANT-FURNITURE-tiny.webp",
+      "image": "/assets/projects/ELEGANT-FURNITURE.webp",
+      "keywords": "UI/UX",
+      "bgColors": "E79465"
+    },
+    {
+      "id": 2,
+      "title": "Medicares",
+      "thumbnail": "/assets/projects/MEDICARES-tiny.webp",
+      "image": "/assets/projects/MEDICARES.webp",
+      "keywords": ["UI/UX", "Web"],
+      "bgColors": ["5191D7", "51D3B9"]
+    },
+    {
+      "id": 3,
+      "title": "Risekap",
+      "thumbnail": "/assets/projects/RISEKAP-tiny.webp",
+      "image": "/assets/projects/RISEKAP.webp",
+      "keywords": "UI/UX",
+      "bgColors": ["4A84C4", "9BC7AA"]
+    },
+    {
+      "id": 4,
+      "title": "Pomodore",
+      "thumbnail": "/assets/projects/pomodore-tiny.webp",
+      "keywords": "Web",
+      "bgColors": ["C35FE8", "949CE5"]
+    },
+    {
+      "id": 5,
+      "title": "TM Meet",
+      "thumbnail": "/assets/projects/TM-MEET-tiny.webp",
+      "image": "/assets/projects/TM-MEET.webp",
+      "keywords": "UI/UX",
+      "bgColors": "1877F2"
+    },
+    {
+      "id": 6,
+      "title": "Techvista",
+      "thumbnail": "/assets/projects/techvista.svg",
+      "image": "/assets/projects/techvista.svg",
+      "keywords": "Logo"
+    }
+]

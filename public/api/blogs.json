@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "caption": "UI/UX Design",
+    "title": "Design Systems: Building Consistency and Speed into Every Project",
+    "thumbnail": "/assets/blogs/design-system-tiny.webp",
+    "image": "/assets/blogs/design-system.webp",
+    "date": "Sep 30, 2025"
+  },
+  {
+    "id": 2,
+    "caption": "Artificial Intelligence",
+    "title": "How AI Is Changing the Way Designers Work",
+    "thumbnail": "/assets/blogs/ai-tiny.webp",
+    "image": "/assets/blogs/ai.webp",
+    "date": "Sep 30, 2025"
+  },
+  {
+    "id": 3,
+    "caption": "Web Performance",
+    "title": "Optimizing Front-End Performance: Simple Steps That Matter",
+    "thumbnail": "/assets/blogs/performance-optimization-tiny.webp",
+    "image": "/assets/blogs/performance-optimization.webp",
+    "date": "Sep 30, 2025"
+  }
+]
