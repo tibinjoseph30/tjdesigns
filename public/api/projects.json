@@ -2,6 +2,7 @@
     {
       "id": 1,
       "title": "Elegant Interiors",
+      "description": "A modern, minimalistic web design concept created for an interior design studio. The layout emphasizes spaciousness, elegant typography, and warm color tones to reflect the brand’s aesthetic values. Designed in Figma, the project focuses on visual hierarchy and clean grid structure.",
       "thumbnail": "/assets/projects/ELEGANT-FURNITURE-tiny.webp",
       "image": "/assets/projects/ELEGANT-FURNITURE.webp",
       "keywords": "UI/UX",
@@ -10,14 +11,17 @@
     {
       "id": 2,
       "title": "Medicares",
+      "description": "A comprehensive digital solution designed to streamline hospital operations and patient interaction. I created both the UI design and the website to ensure a unified experience across platforms. The design combines a clean medical aesthetic with user-centered functionality built with Figma, HTML, CSS, Javascript and tailwind css.",
       "thumbnail": "/assets/projects/MEDICARES-tiny.webp",
       "image": "/assets/projects/MEDICARES.webp",
       "keywords": ["UI/UX", "Web"],
-      "bgColors": ["5191D7", "51D3B9"]
+      "bgColors": ["5191D7", "51D3B9"],
+      "url": "https://tibinjoseph30.github.io/medicares/"
     },
     {
       "id": 3,
       "title": "Risekap",
+      "description": "A multi-step form interface designed to improve user flow and reduce friction in data entry. Built in Figma, the design focuses on clarity, progress indication, and accessibility to enhance user experience in long-form submissions.",
       "thumbnail": "/assets/projects/RISEKAP-tiny.webp",
       "image": "/assets/projects/RISEKAP.webp",
       "keywords": "UI/UX",
@@ -26,13 +30,16 @@
     {
       "id": 4,
       "title": "Pomodore",
+      "description": "A productivity-focused web application built using HTML, CSS, JavaScript, Sass, and Bootstrap 5. The app allows users to create, organize, and track tasks efficiently with a responsive and clean interface.",
       "thumbnail": "/assets/projects/pomodore-tiny.webp",
       "keywords": "Web",
-      "bgColors": ["C35FE8", "949CE5"]
+      "bgColors": ["C35FE8", "949CE5"],
+      "url": "https://pomodore.in/"
     },
     {
       "id": 5,
       "title": "TM Meet",
+      "description": "A collaborative meeting and video conferencing platform designed in Figma to enhance team communication and scheduling efficiency. The interface focuses on clarity, ease of use, and seamless navigation across key features.",
       "thumbnail": "/assets/projects/TM-MEET-tiny.webp",
       "image": "/assets/projects/TM-MEET.webp",
       "keywords": "UI/UX",
@@ -41,6 +48,7 @@
     {
       "id": 6,
       "title": "Techvista",
+      "description": "A professional and modern logo concept created for a technology solutions company. The design blends minimal geometry and bold typography to represent innovation, reliability, and digital growth. Developed with a focus on brand identity and visual consistency across web and print built with Adobe illustrator.",
       "thumbnail": "/assets/projects/techvista.svg",
       "image": "/assets/projects/techvista.svg",
       "keywords": "Logo"

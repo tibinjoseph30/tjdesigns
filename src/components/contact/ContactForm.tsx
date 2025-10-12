@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import SectionHeader from "../shared/SectionHeader";
 import InputField from "../shared/ui/InputField";
 import type z from "zod";
-import { contactSchema } from "../../constants/schemas/contact.from";
+import { contactSchema } from "../../constants/schemas/contact.form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Button from "../shared/ui/Button";
 

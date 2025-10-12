@@ -1,4 +1,4 @@
-import SectionLayout from "../layout/Section";
+import SectionLayout from "../layout/SectionLayout";
 import ContactForm from "./ContactForm";
 import contactus from "../../assets/images/contact-us.webp";
 

@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
 import type { BlogTypes } from "../../constants/types/blogs.dt";
 
-type IntroCardProps = BlogTypes & {
+type StoryCardProps = BlogTypes & {
   className?: string;
   titleClassName?: string;
 };
 
-const IntroCard = ({
-  caption,
+const StoryCard = ({
+  id,
+  category,
   thumbnail,
   title,
   date,
   className,
   titleClassName,
-}: IntroCardProps) => {
+}: StoryCardProps) => {
   return (
     <figure
       className={`${className} group relative rounded-[var(--global-card-radius)] overflow-hidden`}
@@ -27,9 +28,9 @@ const IntroCard = ({
       />
       <div className="absolute bottom-0 left-0 right-0 p-7 text-white bg-gradient-to-b from-transparent to-black/70">
         <figcaption className="px-4 py-1 rounded-full bg-blue-600 inline-block mb-2">
-          {caption}
+          {category}
         </figcaption>
-        <Link to="">
+        <Link to={`/blogs/${id}`}>
           <h5 className={`${titleClassName} font-semibold`}>{title}</h5>
         </Link>
         <p className="mt-2">{date}</p>
@@ -38,4 +39,4 @@ const IntroCard = ({
   );
 };
 
-export default IntroCard;
+export default StoryCard;

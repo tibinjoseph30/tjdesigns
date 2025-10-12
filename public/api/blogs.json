@@ -1,26 +1,29 @@
 [
   {
     "id": 1,
-    "caption": "UI/UX Design",
+    "category": "UI/UX Design",
     "title": "Design Systems: Building Consistency and Speed into Every Project",
+    "description": "A deep dive into how design systems empower teams to maintain visual consistency and accelerate development. This article explores the core elements of an effective design system — from reusable UI components to clear documentation — and how it bridges the gap between designers and developers. Learn how implementing a scalable system enhances brand identity, improves collaboration, and speeds up delivery across projects.",
     "thumbnail": "/assets/blogs/design-system-tiny.webp",
     "image": "/assets/blogs/design-system.webp",
     "date": "Sep 30, 2025"
   },
   {
     "id": 2,
-    "caption": "Artificial Intelligence",
-    "title": "How AI Is Changing the Way Designers Work",
+    "category": "Gen AI",
+    "title": "How AI Is Helping the Way Designers Work",
+    "description": "An insightful look at how artificial intelligence is transforming modern design workflows. This article explores how AI tools assist designers in automating repetitive tasks, generating creative ideas, and improving user experience through data-driven insights. Discover how embracing AI enhances creativity, efficiency, and collaboration in the design process.",
     "thumbnail": "/assets/blogs/ai-tiny.webp",
     "image": "/assets/blogs/ai.webp",
-    "date": "Sep 30, 2025"
+    "date": "Jul 22, 2025"
   },
   {
     "id": 3,
-    "caption": "Web Performance",
+    "category": "Web Performance",
     "title": "Optimizing Front-End Performance: Simple Steps That Matter",
+    "description": "A practical guide to improving website speed and efficiency through smart front-end techniques. This article covers essential optimization strategies like code splitting, image compression, lazy loading, and caching — all aimed at enhancing user experience and SEO performance. Learn how small, consistent improvements can make a big impact on your site’s overall performance.",
     "thumbnail": "/assets/blogs/performance-optimization-tiny.webp",
     "image": "/assets/blogs/performance-optimization.webp",
-    "date": "Sep 30, 2025"
+    "date": "Apr 16, 2025"
   }
 ]

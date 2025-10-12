@@ -2,29 +2,12 @@ import service from "../../assets/images/service.webp";
 import ServiceCard from "./ServiceCard";
 import ServiceAction from "./ServiceAction";
 import SectionHeader from "../shared/SectionHeader";
-import SectionLayout from "../layout/Section";
-import { useEffect, useState } from "react";
-import type { ServiceTypes } from "../../constants/types/services.dt";
+import SectionLayout from "../layout/SectionLayout";
+import { useGetServicesQuery } from "../../store/dataApi";
 
 const Service = () => {
-  const [serviceData, setServiceData] = useState<ServiceTypes[]>([]);
+const {data: serviceData, isLoading} = useGetServicesQuery();
 
-  useEffect(()=> {
-    const fetchServices = async () => {
-      try {
-        const response = await fetch("/api/services.json");
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setServiceData(data);
-      } catch(error: any) {
-        console.log("Fetch error: ", error);
-      }
-    }
-
-    fetchServices();
-  }, [])
   return (
     <SectionLayout id="services" className="service relative">
       <div className="container">
@@ -47,7 +30,7 @@ const Service = () => {
             />
           </div>
           <div className="grid grid-cols-2 gap-5">
-            {serviceData.map((service) => (
+            {serviceData?.map((service) => (
               <ServiceCard key={service.id} {...service} />
             ))}
             <ServiceAction />

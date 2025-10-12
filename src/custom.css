@@ -57,10 +57,15 @@ header nav a.active::before {
 .highlight-underline::before,
 .highlight-circle::before,
 .highlight-circle-2::before,
-.highlight-arrow::before {
+.highlight-arrow::before,
+section.hero .content::before,
+section.hero::before,
+section.intro::before,
+section.service::before,
+section.contact::before,
+section.contact .contact-image::before {
   content: "";
   position: absolute;
-  display: block;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -122,20 +127,15 @@ button.has-link:hover::before {
 }
 
 section.hero .content::before {
-  content: "";
-  position: absolute;
   top: 50%;
   transform: translateY(-55%);
   left: 7%;
   width: 700px;
   height: 700px;
-  background: url("./assets/images/graphics/hero-circles.svg") no-repeat center /
-    contain;
+  background: url("./assets/images/graphics/hero-circles.svg");
 }
 
 section.hero::before {
-  content: "";
-  position: absolute;
   left: 10px;
   bottom: 0;
   width: 310px;
@@ -143,19 +143,15 @@ section.hero::before {
   background-image: url("./assets/images/graphics/pattern-light.svg");
 }
 
-section.intro::before {
-  content: "";
-  position: absolute;
-  right: 0;
+/* section.intro::before {
+  left: 0;
   bottom: 0;
   width: 290px;
   height: 175px;
   background-image: url("./assets/images/graphics/pattern-dark.svg");
-}
+} */
 
 section.service::before {
-  content: "";
-  position: absolute;
   left: 20px;
   bottom: -10px;
   width: 290px;
@@ -164,18 +160,15 @@ section.service::before {
 }
 
 section.contact::before {
-  content: "";
-  position: absolute;
   right: 20px;
   bottom: 100%;
   width: 305px;
   height: 85px;
   background-image: url("./assets/images/graphics/pattern-dark.svg");
+  background-size: cover;
 }
 
 section.contact .contact-image::before {
-  content: "";
-  position: absolute;
   left: 0;
   bottom: 100%;
   transform: translate(-20%, 45%);

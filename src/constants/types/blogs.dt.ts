@@ -1,7 +1,8 @@
 export interface BlogTypes {
   id: number;
-  caption: string;
+  category: string;
   title: string;
+  description: string;
   thumbnail: string;    
   image: string;
   date: string;

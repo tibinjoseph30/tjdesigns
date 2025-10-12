@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import type { ProjectTypes } from "../../constants/types/projects.dt";
+import { getBackgroundStyles } from "../../constants/utils/bgUtils";
 
-const ProjectCard = ({ title, thumbnail, keywords, bgColors }: ProjectTypes) => {
+type projectCardProps = ProjectTypes & {
+  className?: string;
+}
+
+const ProjectCard = ({ id, title, thumbnail, keywords, bgColors, className }: projectCardProps) => {
   const getKeywordColor = (keyword: string) => {
     switch (keyword.toUpperCase()) {
       case "UI/UX":
@@ -16,16 +21,10 @@ const ProjectCard = ({ title, thumbnail, keywords, bgColors }: ProjectTypes) => 
   };
   return (
     <article>
-      <Link to="">
+      <Link to={`/portfolio/${id}`}>
         <figure
-          className="group h-[350px] flex items-center px-6 pt-6 overflow-hidden rounded-[var(--global-card-radius)] bg-slate-200 mb-4 relative"
-          style={{
-            background: bgColors
-              ? Array.isArray(bgColors)
-                ? `linear-gradient(135deg, #${bgColors[0]}, #${bgColors[1]})`
-                : `#${bgColors}`
-              : "#dadfe7",
-          }}
+          className={`${className} group flex items-center px-6 pt-6 overflow-hidden rounded-[var(--global-card-radius)] bg-slate-200 mb-4 relative`}
+          style={getBackgroundStyles(bgColors)}
         >
           <img
             src={thumbnail}
@@ -44,7 +43,7 @@ const ProjectCard = ({ title, thumbnail, keywords, bgColors }: ProjectTypes) => 
           <h6 className="font-semibold">{title}</h6>
         </header>
         {keywords && keywords.length > 0 && (
-          <ul className="flex gap-2 text-sm text-white uppercase">
+          <ul className="inline-flex items-center gap-2 text-sm text-white uppercase">
             {(Array.isArray(keywords) ? keywords : [keywords]).map(
               (keyword, index) => (
                 <li

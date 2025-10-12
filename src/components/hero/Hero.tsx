@@ -4,7 +4,7 @@ import whatsapp from "../../assets/images/social/Whatsapp.svg";
 import linkedin from "../../assets/images/social/Linkedin.svg";
 import instagram from "../../assets/images/social/Instagram.svg";
 import SocialIcon from "./SocialIcon";
-import SectionLayout from "../layout/Section";
+import SectionLayout from "../layout/SectionLayout";
 import Button from "../shared/ui/Button";
 
 const Hero = () => {
