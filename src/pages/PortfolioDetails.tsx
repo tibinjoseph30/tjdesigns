@@ -6,7 +6,7 @@ import { getBackgroundStyles } from "../constants/utils/bgUtils";
 import Button from "../components/shared/ui/Button";
 
 const PortfolioDetails = () => {
-  const { data: projectData, isLoading } = useGetProjectsQuery();
+  const { data: projectData } = useGetProjectsQuery();
   const { id } = useParams();
 
   const project = projectData?.find((p) => String(p.id) === id);

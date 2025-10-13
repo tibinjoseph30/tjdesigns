@@ -5,7 +5,7 @@ import { FaCircleChevronRight } from "react-icons/fa6";
 import StoryCard from "./StoryCard";
 
 const Story = () => {
-  const { data: blogData, isLoading } = useGetBlogsQuery();
+  const { data: blogData } = useGetBlogsQuery();
 
   return (
     <SectionLayout className="intro -mt-[calc(var(--section-gap)+80px)] relative">

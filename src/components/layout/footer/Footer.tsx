@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
 import WhyUs from "./WhyUs";
-import { useState } from "react";
 
 const footerMenu = [
     {title: "Services", to: "/services"},

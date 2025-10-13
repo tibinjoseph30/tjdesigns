@@ -6,7 +6,7 @@ import SectionLayout from "../layout/SectionLayout";
 import { useGetServicesQuery } from "../../store/dataApi";
 
 const Service = () => {
-  const { data: serviceData = [], isLoading } = useGetServicesQuery();
+  const { data: serviceData = [] } = useGetServicesQuery();
 
   const topServices = serviceData.slice(0, 3);
 

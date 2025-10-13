@@ -4,7 +4,7 @@ import BlogCard from "../components/story/BlogCard";
 import { useGetBlogsQuery } from "../store/dataApi";
 
 const Blogs = () => {
-  const { data: blogData, isLoading } = useGetBlogsQuery();
+  const { data: blogData } = useGetBlogsQuery();
 
   return (
     <PageLayout>

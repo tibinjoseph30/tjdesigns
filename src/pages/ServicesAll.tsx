@@ -5,7 +5,7 @@ import PageHeader from "../components/shared/PageHeader";
 import { useGetServicesQuery } from "../store/dataApi";
 
 const AllServices = () => {
-  const { data: serviceData = [], isLoading } = useGetServicesQuery();
+  const { data: serviceData = [] } = useGetServicesQuery();
 
   const mainServices = [...serviceData].slice(0, 3);
   const otherServices = [...serviceData].slice(3);

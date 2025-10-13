@@ -4,7 +4,7 @@ import { useGetBlogsQuery } from "../store/dataApi";
 import { useParams } from "react-router-dom";
 
 const BlogDetails = () => {
-  const { data: blogData, isLoading } = useGetBlogsQuery();
+  const { data: blogData } = useGetBlogsQuery();
   const { id } = useParams();
 
   const blog = blogData?.find((b) => String(b.id) === id);

@@ -5,7 +5,7 @@ import type { ProjectTypes } from "../constants/types/projects.dt";
 import { useGetProjectsQuery } from "../store/dataApi";
 
 const Portfolio = () => {
-  const { data: projectData, isLoading } = useGetProjectsQuery();
+  const { data: projectData } = useGetProjectsQuery();
 
   return (
     <PageLayout>
