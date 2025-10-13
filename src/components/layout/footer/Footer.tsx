@@ -13,7 +13,7 @@ const footerMenu = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--accent-color)] text-white mt-8 sm:mt-0">
+    <footer className="bg-[var(--accent-color)] text-white">
       <div className="container">
         <div className="grid sm:grid-cols-12 gap-x-5 gap-y-10 py-8 sm:py-[calc(var(--section-gap)*2)]">
           <AboutUs />

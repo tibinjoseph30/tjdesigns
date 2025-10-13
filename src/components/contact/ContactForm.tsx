@@ -53,11 +53,13 @@ const ContactForm = () => {
               <div className="grid sm:grid-cols-2 sm:gap-5 gap-8">
                 <InputField
                   label="First Name"
+                  placeholder="Enter First name"
                   {...register("firstname")}
                   error={errors.firstname?.message}
                 />
                 <InputField
                   label="Last Name"
+                  placeholder="Enter last name"
                   {...register("lastName")}
                   error={errors.lastName?.message}
                 />
@@ -65,18 +67,21 @@ const ContactForm = () => {
               <InputField
                 label="Email"
                 type="email"
+                placeholder="Enter email address"
                 {...register("email")}
                 error={errors.email?.message}
               />
               <InputField
                 label="Mobile"
                 type="tel"
+                placeholder="Enter mobile number"
                 {...register("mobile")}
                 error={errors.mobile?.message}
               />
               <InputField
                 label="Message"
                 textarea
+                placeholder="Tell me what i can help you with"
                 {...register("message")}
                 error={errors.message?.message}
               />

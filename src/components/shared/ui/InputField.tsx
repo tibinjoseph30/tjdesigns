@@ -5,6 +5,7 @@ type InputFieldProps = {
   error?: string;
   textarea?: boolean;
   required?: boolean;
+  placeholder?: string;
 };
 
 const InputField = ({
@@ -15,7 +16,7 @@ const InputField = ({
   ...rest
 }: InputFieldProps) => {
   const baseClasses =
-    "border border-[var(--border-color)] rounded-xl px-4 py-2 min-h-[50px] w-full focus:outline-none";
+    "bg-white border border-[var(--border-color)] rounded-xl px-4 py-2 min-h-[50px] w-full focus:outline-none";
   const errorClasses = error
     ? "border-red-500"
     : "border-gray-300";
