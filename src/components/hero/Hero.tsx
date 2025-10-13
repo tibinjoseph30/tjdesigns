@@ -1,5 +1,5 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import facebook from "../../assets/images/social/facebook.svg";
+import facebook from "../../assets/images/social/Facebook.svg";
 import whatsapp from "../../assets/images/social/Whatsapp.svg";
 import linkedin from "../../assets/images/social/Linkedin.svg";
 import instagram from "../../assets/images/social/Instagram.svg";
