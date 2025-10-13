@@ -37,7 +37,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="bg-white p-10 rounded-[var(--global-card-radius)] col-span-2 xl:col-span-1">
+    <div className="sm:bg-white sm:p-10 sm:rounded-[var(--global-card-radius)] col-span-2 xl:col-span-1">
       <form onSubmit={handleSubmit(onSubmit)}>
         <fieldset>
           <legend className="w-full">

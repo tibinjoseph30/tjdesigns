@@ -30,7 +30,7 @@ const Hero = () => {
     <SectionLayout id="home" className="hero bg-[var(--accent-color)] min-h-screen pt-[var(--header-height)] flex items-center">
       <div className="container">
         <div className="content relative max-w-[900px] text-center text-white py-8 mx-auto -mt-[var(--header-height)] lg:mt-0">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight font-bold relative">
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl leading-tight font-bold relative">
             Design That Builds{" "}
             <span className="text-[var(--primary-color)]">Brands.</span> Website
             That Win <span className="highlight-underline">Customers.</span>

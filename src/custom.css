@@ -107,14 +107,6 @@ section.hero .content::before {
   background-image: url("./assets/images/graphics/hero-circles.svg");
 }
 
-section.hero::before {
-  left: 10px;
-  bottom: 0;
-  width: 310px;
-  height: 150px;
-  background-image: url("./assets/images/graphics/pattern-light.svg");
-}
-
 /* section.intro::before {
   left: 0;
   bottom: 0;
@@ -200,6 +192,13 @@ section.contact .contact-image::before {
     width: 290px;
     height: 175px;
     background-image: url("./assets/images/graphics/pattern-dark.svg");
+  }
+  section.hero::before {
+    left: 10px;
+    bottom: 0;
+    width: 310px;
+    height: 150px;
+    background-image: url("./assets/images/graphics/pattern-light.svg");
   }
 }
 @media screen and (min-width: 1600px) {
