@@ -17,7 +17,7 @@ const Button = ({
   className,
   to,
 }: buttonProps) => {
-  const baseStyles = "inline-block font-semibold text-center cursor-pointer";
+  const baseStyles = "inline-block font-semibold text-center cursor-pointer whitespace-nowrap";
 
   const variantStyles = {
     primary: "bg-[var(--primary-color)] text-[var(--accent-color)]",

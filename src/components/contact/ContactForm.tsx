@@ -37,53 +37,64 @@ const ContactForm = () => {
     }
   };
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="bg-white p-10 rounded-[var(--global-card-radius)]">
-      <fieldset>
-        <legend>
-          <SectionHeader
-            title={
-              <>
-                Have an <span className="highlight-circle-2">Idea?</span> Lets Talk
-              </>
-            }
-          ></SectionHeader>
-          <div className="grid gap-8">
-            <div className="grid grid-cols-2 gap-5">
+    <div className="bg-white p-10 rounded-[var(--global-card-radius)] col-span-2 xl:col-span-1">
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <fieldset>
+          <legend className="w-full">
+            <SectionHeader
+              title={
+                <>
+                  Have an <span className="highlight-circle-2">Idea?</span> Lets
+                  Talk
+                </>
+              }
+            ></SectionHeader>
+            <div className="grid gap-8">
+              <div className="grid sm:grid-cols-2 sm:gap-5 gap-8">
+                <InputField
+                  label="First Name"
+                  {...register("firstname")}
+                  error={errors.firstname?.message}
+                />
+                <InputField
+                  label="Last Name"
+                  {...register("lastName")}
+                  error={errors.lastName?.message}
+                />
+              </div>
               <InputField
-                label="First Name"
-                {...register("firstname")}
-                error={errors.firstname?.message}
+                label="Email"
+                type="email"
+                {...register("email")}
+                error={errors.email?.message}
               />
               <InputField
-                label="Last Name"
-                {...register("lastName")}
-                error={errors.lastName?.message}
+                label="Mobile"
+                type="tel"
+                {...register("mobile")}
+                error={errors.mobile?.message}
               />
+              <InputField
+                label="Message"
+                textarea
+                {...register("message")}
+                error={errors.message?.message}
+              />
+              <Button
+                type="submit"
+                variant="accent"
+                className="rounded-xl min-h-[50px]"
+              >
+                {isSubmitting ? "Sending Message.." : "Send Message"}
+              </Button>
+              {isSubmitSuccessful && (
+                <p className="text-green-600">Form submitted successfully!</p>
+              )}
             </div>
-            <InputField
-              label="Email"
-              type="email"
-              {...register("email")}
-              error={errors.email?.message}
-            />
-            <InputField
-              label="Mobile"
-              type="tel"
-              {...register("mobile")}
-              error={errors.mobile?.message}
-            />
-            <InputField
-              label="Message"
-              textarea
-              {...register("message")}
-              error={errors.message?.message}
-            />
-            <Button type="submit" variant="accent" className="rounded-xl min-h-[50px]">{isSubmitting ? "Sending Message.." : "Send Message"}</Button>
-            {isSubmitSuccessful && <p className="text-green-600">Form submitted successfully!</p>}
-          </div>
-        </legend>
-      </fieldset>
-    </form>
+          </legend>
+        </fieldset>
+      </form>
+    </div>
   );
 };
 

@@ -7,7 +7,9 @@ import { FaCircleChevronRight } from "react-icons/fa6";
 import { useGetProjectsQuery } from "../../store/dataApi";
 
 const Projects = () => {
-  const {data: projectData, isLoading} = useGetProjectsQuery();
+  const { data: projectData = [], isLoading } = useGetProjectsQuery();
+
+  const latestProjects = [...projectData].slice(0, 6);
 
   return (
     <SectionLayout id="portfolio" className="projects">
@@ -35,12 +37,17 @@ const Projects = () => {
           </Button>
         </div>
         {!isLoading && (
-          <div className="grid grid-cols-3 gap-x-5 gap-y-10">
-            {projectData?.map((project: ProjectTypes) => (
-              <ProjectCard key={project.id} {...project} className="h-[350px]" />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-6 lg:gap-y-10">
+            {latestProjects?.map((project: ProjectTypes) => (
+              <ProjectCard
+                key={project.id}
+                {...project}
+                className="h-[300px] sm:h-[250px] md:h-[300px] xl:h-[350px]"
+              />
             ))}
           </div>
         )}
+        <Button to="/services" variant="accent" className="sm:hidden block px-4 py-3 min-h-[50px] w-full rounded-full mt-6">See All Works</Button>
       </div>
     </SectionLayout>
   );

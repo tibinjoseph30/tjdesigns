@@ -4,9 +4,18 @@ import { getBackgroundStyles } from "../../constants/utils/bgUtils";
 
 type projectCardProps = ProjectTypes & {
   className?: string;
-}
+  imgClassName?: string;
+};
 
-const ProjectCard = ({ id, title, thumbnail, keywords, bgColors, className }: projectCardProps) => {
+const ProjectCard = ({
+  id,
+  title,
+  thumbnail,
+  keywords,
+  bgColors,
+  className,
+  imgClassName,
+}: projectCardProps) => {
   const getKeywordColor = (keyword: string) => {
     switch (keyword.toUpperCase()) {
       case "UI/UX":
@@ -29,7 +38,7 @@ const ProjectCard = ({ id, title, thumbnail, keywords, bgColors, className }: pr
           <img
             src={thumbnail}
             alt={thumbnail}
-            className="w-full max-w-[calc(100%-50px)] mx-auto"
+            className={`${imgClassName} w-full max-w-[calc(100%-50px)] mx-auto`}
           />
           <div className="absolute inset-x-0 bottom-0 flex items-end justify-center p-4 transition duration-300 transform opacity-0 group-hover:opacity-100 bg-gradient-to-b from-transparent to-black/60 h-1/3">
             <figcaption className="text-2xl font-semibold text-white">

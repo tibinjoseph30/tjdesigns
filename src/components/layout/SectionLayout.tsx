@@ -6,7 +6,7 @@ type sectionLayoutProps = {
 
 const SectionLayout = ({ children, className, id }: sectionLayoutProps) => {
   return (
-    <section id={id} className={`${className} py-[var(--section-gap)]`}>
+    <section id={id} className={`${className} py-5 lg:py-[var(--section-gap)]`}>
       {children}
     </section>
   );

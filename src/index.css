@@ -7,14 +7,14 @@
   --global-font-size: 16px;
   --primary-color: #FFDD57;
   --accent-color: #1A2E40;
-  --container-padding: 0 50px;
+  --container-padding: 50px;
   --header-height: 100px;
   --nav-menu-color: #c0cedb;
   --border-color: #d5d5d5;
   --global-card-radius: 30px;
-  --fs-h1: clamp(2rem, 6vw, 4rem);
+  /* --fs-h1: clamp(2rem, 6vw, 4rem);
   --fs-h2: clamp(2rem, 4vw, 3rem);
-  --fs-h5: clamp(1.25rem, 2vw, 1.5rem);
+  --fs-h5: clamp(1.25rem, 2vw, 1.5rem); */
   --lh-body: 1.5em;
   --section-head-gap: 3rem;
   --section-gap: 3rem;
@@ -25,6 +25,6 @@ body {
   font-size: var(--global-font-size);
   font-optical-sizing: auto;
   font-style: normal;
-  line-height: var(--lh-body);
+  /* line-height: var(--lh-body); */
   color: var(--accent-color);
 }

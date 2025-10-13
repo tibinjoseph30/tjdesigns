@@ -19,14 +19,14 @@ const PortfolioDetails = () => {
           <Button
             variant="accent"
             to={project?.url}
-            className="px-8 py-4 rounded-xl text-[18px] !mb-5 transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-[var(--accent-color)]"
+            className="w-full sm:w-auto px-8 py-3 rounded-xl text-[18px] !mb-5 transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-[var(--accent-color)]"
           >
             Live Preview
           </Button>
         )}
         {project?.image && (
           <div
-            className="p-12 rounded-xl"
+            className="p-6 sm:p-12 rounded-xl"
             style={getBackgroundStyles(project?.bgColors)}
           >
             <img

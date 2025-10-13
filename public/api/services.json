@@ -3,7 +3,7 @@
       "id": 1,
       "title": "Web Design",
       "description": "Clean, fast, and SEO-ready websites tailored to your business.",
-      "keywords": ["responsive", "mobile first"]
+      "keywords": ["Responsive", "Mobile First"]
     },
     {
       "id": 2,
@@ -15,6 +15,22 @@
       "id": 3,
       "title": "Branding",
       "description": "Unique brand identities that build trust and recognition.",
-      "keywords": ["Logo", "Business Cards", "Social Media Posts"]
+      "keywords": ["Logo", "Business Cards"]
+    },
+    {
+      "id": 4,
+      "title": "Social Media Posters"
+    },
+    {
+      "id": 5,
+      "title": "Email Templates"
+    },
+    {
+      "id": 6,
+      "title": "Jersey Designing"
+    },
+    {
+      "id": 6,
+      "title": "Resume Designing"
     }
 ]

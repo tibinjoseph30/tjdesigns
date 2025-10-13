@@ -31,7 +31,7 @@ const StoryCard = ({
           {category}
         </figcaption>
         <Link to={`/blogs/${id}`}>
-          <h5 className={`${titleClassName} font-semibold`}>{title}</h5>
+          <h5 className={`${titleClassName} font-semibold line-clamp-2`}>{title}</h5>
         </Link>
         <p className="mt-2">{date}</p>
       </div>

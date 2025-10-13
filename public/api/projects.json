@@ -52,5 +52,14 @@
       "thumbnail": "/assets/projects/techvista.svg",
       "image": "/assets/projects/techvista.svg",
       "keywords": "Logo"
+    },
+    {
+      "id": 7,
+      "title": "Modern Login",
+      "description": "A sleek and responsive modern login page designed with a good interface and intuitive user experience. The layout focuses on simplicity and clarity — featuring a clean form area with subtle borders, rounded input fields, and a prominent call-to-action button.",
+      "thumbnail": "/assets/projects/modern-login-tiny.webp",
+      "image": "/assets/projects/modern-login.webp",
+      "keywords": "UI/UX",
+      "bgColors": "759A68"
     }
 ]

@@ -16,7 +16,7 @@ const socialLinks = [
 
 const ContactUs = () => {
   return (
-    <div className="col-span-3 grid gap-9">
+    <div className="sm:col-span-5 lg:col-span-3 grid gap-5 sm:gap-9">
       <FooterSection title="Contact">
         <address className="not-italic">
           Email: tjdesigns@gmail.com
