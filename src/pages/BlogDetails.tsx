@@ -25,6 +25,8 @@ const BlogDetails = () => {
           <img
             src={blog?.image}
             alt={blog?.image}
+            width="800"
+            height="450"
             className="w-full rounded-xl"
           />
           <figcaption className="mt-8">{blog?.description}</figcaption>
