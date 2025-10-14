@@ -6,11 +6,13 @@ import PortfolioDetails from "./pages/PortfolioDetails";
 import AllServices from "./pages/ServicesAll";
 import Blogs from "./pages/Blogs";
 import BlogDetails from "./pages/BlogDetails";
+import ScrollToTop from "./components/shared/ScrollToTop";
 
 function App() {
   return (
     <>
       <main>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
