@@ -61,5 +61,41 @@
       "image": "/assets/projects/modern-login.webp",
       "keywords": "UI/UX",
       "bgColors": "759A68"
+    },
+    {
+      "id": 8,
+      "title": "TJ Designs",
+      "description": "TJ Designs is my personal creative studio where I craft modern, responsive, and user-focused digital experiences built in Figma",
+      "thumbnail": "/assets/projects/tj-designs-tiny.webp",
+      "image": "/assets/projects/tj-designs.webp",
+      "keywords": "UI/UX",
+      "bgColors": ["D8C597", "627484"]
+    },
+    {
+      "id": 9,
+      "title": "TM Chat",
+      "description": "A chat app UI prototype showcasing layout, design, and user interface elements. Built with HTML, SCSS with javascript styled for a clean, modern look.",
+      "thumbnail": "/assets/projects/tm-chat-tiny.webp",
+      "keywords": "Web",
+      "bgColors": "6295D7",
+      "url": "https://tibinjoseph30.github.io/chat-app/"
+    },
+    {
+      "id": 10,
+      "title": "Vahan",
+      "description": "Logo design for a second-hand car business, focusing on reliability, modern aesthetics, and brand recognition.",
+      "thumbnail": "/assets/projects/vahan.svg",
+      "image": "/assets/projects/vahan.svg",
+      "keywords": "Logo",
+      "bgColors": "9e9e9e"
+    },
+    {
+      "id": 11,
+      "title": "Service App",
+      "description": "A mobile app UI designed to connect users with local service providers. The interface focuses on simplicity, intuitive navigation, and a clean layout, ensuring users can easily find and book services in their area. Designed in Figma to be responsive and user-friendly.",
+      "thumbnail": "/assets/projects/service-app-tiny.webp",
+      "image": "/assets/projects/service-app.webp",
+      "keywords": "Logo",
+      "bgColors": "9a3c3d"
     }
 ]
