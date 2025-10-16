@@ -11,7 +11,7 @@ const Service = () => {
   const topServices = serviceData.slice(0, 3);
 
   return (
-    <SectionLayout id="services" className="service relative">
+    <SectionLayout id="services" className="service relative mt-[var(--section-gap)]">
       <div className="container">
         <div className="grid items-end sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           <div className="sm:col-span-2 md:col-span-1 xl:col-span-2 sm:row-span-2 grid">

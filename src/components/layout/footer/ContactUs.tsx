@@ -25,7 +25,7 @@ const ContactUs = () => {
         </address>
       </FooterSection>
       <FooterSection title="Follow">
-        <ul className="flex gap-4">
+        <ul className="flex gap-3">
           {socialLinks.map((item, index) => (
             <li key={index}>
               <Link

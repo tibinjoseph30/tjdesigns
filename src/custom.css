@@ -99,30 +99,13 @@ button.has-link:hover::before {
 }
 
 section.hero .content::before {
-  top: 50%;
+  top: 60%;
   transform: translateY(-55%);
   left: 0;
   width: 300px;
   height: 300px;
   background-image: url("./assets/images/graphics/hero-circles.svg");
 }
-
-/* section.intro::before {
-  left: 0;
-  bottom: 0;
-  width: 290px;
-  height: 175px;
-  background-image: url("./assets/images/graphics/pattern-dark.svg");
-} */
-
-/* section.contact::before {
-  right: 20px;
-  bottom: 100%;
-  width: 305px;
-  height: 85px;
-  background-image: url("./assets/images/graphics/pattern-dark.svg");
-  background-size: cover;
-} */
 
 section.contact .contact-image::before {
   left: 0;
@@ -176,16 +159,20 @@ section.contact .contact-image::before {
     transform: scale(1);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   section.hero .content::before {
-    width: 700px;
-    height: 700px;
+    width: 550px;
+    height: 550px;
   }
   .container {
     padding-inline: var(--container-padding);
   }
 }
 @media screen and (min-width: 1024px) {
+  section.hero .content::before {
+    width: 700px;
+    height: 700px;
+  }
   section.service::before {
     left: 20px;
     bottom: -10px;
@@ -199,6 +186,16 @@ section.contact .contact-image::before {
     width: 310px;
     height: 150px;
     background-image: url("./assets/images/graphics/pattern-light.svg");
+  }
+}
+@media screen and (min-width: 1280px) {
+  section.contact::before {
+    right: 20px;
+    bottom: 100%;
+    width: 270px;
+    height: 70px;
+    background-image: url("./assets/images/graphics/pattern-dark.svg");
+    background-size: cover;
   }
 }
 @media screen and (min-width: 1600px) {

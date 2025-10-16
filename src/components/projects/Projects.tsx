@@ -47,7 +47,7 @@ const Projects = () => {
             ))}
           </div>
         )}
-        <Button to="/services" variant="accent" className="sm:hidden block px-4 py-3 min-h-[50px] w-full rounded-full mt-6">See All Works</Button>
+        <Button to="/portfolio" variant="accent" className="sm:hidden block px-4 py-3 min-h-[50px] w-full rounded-full mt-6">See All Works</Button>
       </div>
     </SectionLayout>
   );

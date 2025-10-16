@@ -10,7 +10,7 @@ const Header = () => {
     { title: "Home", to: "home" },
     { title: "Services", to: "services" },
     { title: "Portfolio", to: "portfolio" },
-    { title: "Get in Touch", to: "contact" },
+    { title: "Get a Quote", to: "contact" },
   ];
 
   const mobileNavMenu = [

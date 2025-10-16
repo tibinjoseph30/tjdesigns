@@ -32,7 +32,7 @@ const ProjectCard = ({
     <article>
       <Link to={`/portfolio/${id}`}>
         <figure
-          className={`${className} group flex items-center px-6 pt-6 overflow-hidden rounded-[var(--global-card-radius)] bg-slate-200 mb-4 relative`}
+          className={`${className} group flex items-center px-6 pt-6 overflow-hidden rounded-[var(--global-card-radius)] bg-slate-200 mb-2 relative`}
           style={getBackgroundStyles(bgColors)}
         >
           <img

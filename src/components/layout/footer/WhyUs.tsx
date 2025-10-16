@@ -1,11 +1,11 @@
 import FooterSection from "./FooterSection"
 
 const whyUsList = [
-    {title: "ucer-centered design"},
-    {title: "Seamless development"},
-    {title: "Creative branding solutions"},
-    {title: "Collabaraive approach"},
-    {title: "On-time delivery"}
+    {title: "User-centered Design"},
+    {title: "Seamless Development"},
+    {title: "Creative Branding Solutions"},
+    {title: "Collabaraive Approach"},
+    {title: "On-time Delivery"}
 ]
 
 const WhyUs = () => {
