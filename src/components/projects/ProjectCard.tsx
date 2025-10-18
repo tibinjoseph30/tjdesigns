@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import type { ProjectTypes } from "../../constants/types/projects.dt";
 import { getBackgroundStyles } from "../../constants/utils/bgUtils";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 type projectCardProps = ProjectTypes & {
   className?: string;
@@ -28,8 +30,17 @@ const ProjectCard = ({
         return "bg-gray-600";
     }
   };
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <article>
+    <motion.article
+      ref={ref}
+      initial={{ opacity: 0, y: 40 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8 }}
+    >
       <Link to={`/portfolio/${id}`}>
         <figure
           className={`${className} group flex items-center px-6 pt-6 overflow-hidden rounded-[var(--global-card-radius)] bg-slate-200 mb-2 relative`}
@@ -66,7 +77,7 @@ const ProjectCard = ({
           </ul>
         )}
       </div>
-    </article>
+    </motion.article>
   );
 };
 

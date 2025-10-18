@@ -6,6 +6,7 @@ import instagram from "../../assets/images/social/Instagram.svg";
 import SocialIcon from "./SocialIcon";
 import SectionLayout from "../layout/SectionLayout";
 import Button from "../shared/ui/Button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const social = [
@@ -27,9 +28,17 @@ const Hero = () => {
     },
   ];
   return (
-    <SectionLayout id="home" className="hero bg-[var(--accent-color)] min-h-screen pt-[var(--header-height)] flex items-center">
+    <SectionLayout
+      id="home"
+      className="hero bg-[var(--accent-color)] min-h-screen pt-[var(--header-height)] flex items-center"
+    >
       <div className="container">
-        <div className="content relative max-w-[900px] text-center text-white py-8 mx-auto -mt-[var(--header-height)] lg:mt-0">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="content relative max-w-[900px] text-center text-white py-8 mx-auto -mt-[var(--header-height)] lg:mt-0"
+        >
           <h1 className="text-4xl lg:text-5xl xl:text-6xl leading-tight font-bold relative">
             Design That Builds{" "}
             <span className="text-[var(--primary-color)]">Brands.</span> Website
@@ -63,7 +72,7 @@ const Hero = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </SectionLayout>
   );

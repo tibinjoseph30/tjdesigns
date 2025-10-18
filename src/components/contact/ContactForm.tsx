@@ -5,6 +5,9 @@ import type z from "zod";
 import { contactSchema } from "../../constants/schemas/contact.form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Button from "../shared/ui/Button";
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 type contactFormData = z.infer<typeof contactSchema>;
 
@@ -36,8 +39,18 @@ const ContactForm = () => {
       console.log("error", error);
     }
   };
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="sm:bg-white sm:p-10 sm:rounded-[var(--global-card-radius)] col-span-2 xl:col-span-1">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 40 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8 }}
+      className="sm:bg-white sm:p-10 sm:rounded-[var(--global-card-radius)] col-span-2 xl:col-span-1"
+    >
       <form onSubmit={handleSubmit(onSubmit)}>
         <fieldset>
           <legend className="w-full">
@@ -99,7 +112,7 @@ const ContactForm = () => {
           </legend>
         </fieldset>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

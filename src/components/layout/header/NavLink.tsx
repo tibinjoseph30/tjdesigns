@@ -32,7 +32,7 @@ const NavLink = ({ title, to, isActive = false }: navLinkProps) => {
         isActive ? "active text-white" : ""
       } inline-block font-medium transition-all duration-400 overflow-hidden relative px-4 py-2 text-[var(--nav-menu-color)] hover:text-white`}
     >
-      {title}
+      <span className="relative">{title}</span>
     </a>
   );
 };
